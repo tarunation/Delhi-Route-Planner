@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?> // Creating Layout for making Main Screen-1
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/menuscreen"
+        >
+
+ <ScrollView                        // Adding Scroll bar to Application
+     android:id="@+id/scrollviewmain"
+     android:layout_width="fill_parent"
+     android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="474dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4" >
+
+        <ImageView                  // For Adding DTC Image
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/dtclogo" />
+
+        <Button                    // Button Component to Give DTC Services
+            android:id="@+id/buttonDtc"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="DTC Services"
+            android:textColor="@color/Marom"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView8" >
+
+        <ImageView                   // For Adding DTC Image
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/metrologo" />
+
+        <Button                       // Button Component to Give DTC Services
+            android:id="@+id/buttonMetro"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Metro Services"
+            android:textColor="@color/Marom"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+       <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView20"
+        android:gravity="center" >
+
+        <ImageView                 // Adding Image Button For Exiting Application
+            android:id="@+id/Mainexitimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/exitlarge" />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
